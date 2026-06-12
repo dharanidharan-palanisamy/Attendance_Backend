@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 // Ensure uploads directory exists
 const uploadsDir = path.join(__dirname, 'uploads');
 if (!fs.existsSync(uploadsDir)) {
-  fs.mkdirSync(uploadsDir, { recursive: true });
+  fs.mkdirSync(uploadsDir, { recursive: true });
 }
 const morgan = require('morgan');
 const authRoutes = require('./routes/auth');
